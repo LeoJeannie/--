@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //判断时间阶段,比如用户输入12点则弹出中午好,用户输入18点则弹出傍晚好,用户输入23点则弹出深夜好
+        //1.弹出prompt输入框,请用户输入时间,把这个值取出来保存到变量中
+        //2.使用多分支 if else if来分辨判断多分支的值
+        var time = prompt('请输入时间');
+        if (time >= 22) {
+            alert('晚安')
+        }else if (time >=19) {
+            alert('晚上好')
+        }else if (time >=13) {
+            alert('下午好')
+        }else if (time >=12) {
+            alert('中午好')
+        }else if (time >=9) {
+            alert ('上午好')
+        }else if (time >=6) {
+            alert('早上好')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
