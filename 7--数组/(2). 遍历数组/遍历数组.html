@@ -8,10 +8,10 @@
     <title>Document</title>
     <script>
         //遍历数组： 就是把数组的元素从头到尾访问一遍
-        // var arr = ['red', 'green', 'blue'];
-        // for (var i = 0; i < 3; i++) {
-        //     console.log(arr[i]);
-        // }
+        var arr = ['red', 'green', 'blue'];
+         for (var i = 0; i < 3; i++) {
+             console.log(arr[i]);
+         }
         //1. 因为数组索引号从0开始，所以 i 必须从 0 开始 i < 3
         //2. 输出的时候arr[i] i计数器当索引号来用
 
@@ -21,16 +21,23 @@
             console.log(name[i]);
         }
 
+        // 4.数组长度     数组名.length
+        var arr = ['关羽', '张飞', '马超', '赵云', '黄忠','刘备', '姜维'];
+        for (var i = 0; i < 7; i++) {
+            console.log(arr[i]);
+        }
+        console.log(arr.length);
+        for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+        // (1). 数组的长度是元素的个数,不要和索引号混淆
+        // (2). arr.length 动态检测数组元素的个数
 
 
 
 
-
-        //今天为啥不新学代码
-
-        //我今天学习了git呢
-
-        //我不回滚了!!!!  (git config --global http.sslVerify "false")
+        
     </script>
 </head>
 
