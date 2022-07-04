@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 将数组[2,0,6,1,77,0,52,0,25,7]中大于等于10的元素选出来,放入新数组
+        // 1. 声明一个新的数组用于存放新数据newArr
+        // 2. 遍历原来的数组,找出大于等于10的元素
+        // 3. 依次追加给新数组newArr
+
+        var arr = [2,0,6,1,77,0,52,0,25,7];
+        var newArr = [];
+        var j = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] >=10) {
+                newArr[j] = arr[i];
+                j++;
+            }
+        }
+        console.log(newArr);
+
+        //  方法2:
+        var arr1 = [2,0,6,1,77,0,52,0,25,7];
+        var newArr1 = [];
+        for (var i = 0; i < arr1.length; i++) {
+            if (arr1[i] >= 10) {
+                newArr1[newArr1.length] = arr1[i]
+            }
+        }
+        console.log(newArr1);
+
+        // 把数组中小于10等于10的数组筛选出存入新数组
+        var arr2 = [2,0,6,1,77,0,52,0,25,7];
+        var newArr2= [];
+        for (var i = 0; i < arr2.length; i++) {
+            if (arr[i] <= 10) {
+                newArr2[newArr2.length] = arr2[i];
+            }
+        }
+        console.log(newArr2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

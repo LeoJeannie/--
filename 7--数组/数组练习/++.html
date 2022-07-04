@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 将数组['red', 'green', 'biue', 'pink']转换为字符串,并且用 | 或其他符号分割
+        // 1. 需要一个变量用于存放转换完的字符串 str
+        // 2. 遍历原来的数组,分别把里面的数据取出来加到字符串中
+        // 3. 同时在后面多加一个分割符
+
+        var arr = ['red', 'green', 'biue', 'pink'];
+        var str = '';
+        var spe = '|';
+        for (var i = 0; i < arr.length; i++) {
+            str += arr[i] +spe;
+        }
+        console.log(str);
+
+
+        var arr = [1, 2, 5, 77, 6]
+        var num = 0;
+        var str1 = 0;
+        for (var i = 0; i < arr.length; i++) {
+            num += arr[i];
+            str1 = num / arr.length
+        }
+        console.log(num,str1);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
