@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 下一个函数,用户输入任意两个数字的任意算术运算(简单的计算小功能),并能弹出运算后的结果
+        var num1 = prompt('请您输入第一个值:');
+        var operator = prompt('请输入算数符号');
+        var num2 = prompt('请您输入第二个值:');
+
+        function gatSum(num1, num2, operator) {
+            var shuzi1 = parseFloat(num1);
+            var shuzi2 = parseFloat(num2);
+            var result = 0;
+
+            if (operator == '+') {
+                result = shuzi1 + shuzi2;
+            }
+            else if (operator == '-') {
+                result = shuzi1 - shuzi2;
+            }
+            else if (operator == '*') {
+                result = shuzi1 * shuzi2;
+            }
+            else if (operator == '/') {
+                result = shuzi1 / shuzi2;
+            }
+
+            return result;
+        }
+
+        var wan = gatSum(num1, num2, operator);
+
+        alert('您的结果是' + wan);
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
